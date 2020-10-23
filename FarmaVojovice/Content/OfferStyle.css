@@ -1,0 +1,12 @@
+﻿.changeColor:hover{
+    fill:red;
+}
+
+.meal-table{
+    padding:5px;
+    text-align:center;
+}
+
+.item{
+    position:static;
+}

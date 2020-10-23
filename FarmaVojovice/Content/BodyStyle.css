@@ -1,0 +1,46 @@
+﻿
+.vertical-center {
+    width: 50%;
+    height: inherit;
+    margin: 0 auto;
+}
+
+footer{
+    text-align:center;
+}
+
+
+.footer-contact{
+    padding:5px;
+}
+.footer-contact p {
+    float: left;
+    display: block;
+}
+
+.footer-contact a{
+    float: left;
+    display: block;
+}
+
+.addres {
+    padding-left: 50px;
+}
+
+address {
+    color: brown;
+    padding-left: 180px;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    .vertical-center{
+        width: 100%;
+        margin:0;
+    }
+
+    address{
+        padding-left:0;
+    }
+}

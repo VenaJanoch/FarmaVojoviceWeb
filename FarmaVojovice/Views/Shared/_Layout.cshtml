@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Farma Vojovice </title>
+    <link href="~/Bull.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="~/Content/NavBarStyle.css">
+    <link rel="stylesheet" href="~/Content/BodyStyle.css">
+    <link rel="stylesheet" href="~/Content/GalleryStyle.css">
+    <link rel="stylesheet" href="~/Content/OfferStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <div class="bg-img"></div>
+
+
+
+    <div class="vertical-center container body-content">
+        <div id="myNavbar" class="topnav justify-content-center ">
+            @Html.ActionLink("Farma", "Index", "Home", new { area = "" }, new { @class = "activeLink" })
+            @Html.ActionLink("Zrání", "Zrani", "Home", new { area = "" }, null)
+            <a id="logo" href="#">
+                <img src="~/Bull.ico" width="30" height="30" alt="Logo">
+            </a>
+            @Html.ActionLink("Naše nabídka", "Offer", "Home", new { area = "" }, null)
+            @Html.ActionLink("Kontakt", "Contact", "Home", new { area = "" }, null)
+            @Html.ActionLink("Galerie", "Gallery", "Home", new { area = "" }, null)
+            <h1 class="nav-name">Farma Vojovice</h1>
+            <a href="javascript:void(0);" class="icon" onclick="showSmallMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        @RenderBody()
+        @RenderSection("SPAViews", required: false)
+        <hr />
+        @Html.Partial("../Home/_Footer")
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/StickyScript.js")
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
