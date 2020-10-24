@@ -2,11 +2,22 @@
     fill:red;
 }
 
-.meal-table{
-    padding:5px;
-    text-align:center;
+.meal-table {
+    text-align: center;
+    width: 55%;
+    overflow: hidden;
+    height:auto;
+    color:white;
 }
 
 .item{
     position:static;
+    padding-bottom:20px;
+}
+
+.caw-side {
+    float: left;
+    width: 35%;
+    overflow: hidden;
+    height:auto;
 }

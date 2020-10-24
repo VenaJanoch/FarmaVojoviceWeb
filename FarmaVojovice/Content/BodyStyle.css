@@ -24,14 +24,20 @@ footer{
 }
 
 .addres {
-    padding-left: 50px;
+    color: white;
+    margin: 20px 0 20px 0;
+    
 }
 
+
 address {
-    color: brown;
-    padding-left: 180px;
-    font-size: x-large;
+    color: rgb(19, 46, 69);
+    font-size: xx-large;
     text-decoration: none;
+    width: 30%;
+    height: inherit;
+    margin: 0 auto;
+    text-align: center;
 }
 
 @media screen and (max-width: 800px) {

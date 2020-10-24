@@ -4,15 +4,18 @@
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm-6" style="position:static;">
-            @Html.Partial("../Offer/_SVGCaw")
-        </div>
-        <div class="col-sm-6 meal-table" style="position:static;">
-            <div class="col-sm-3 item" ><img src="~/Images1/Maso1.jpg" width="130" height="130" alt="Logo"><span>1000$</span></div>
-            <div class="col-sm-3 item" ><img src="~/Images1/Maso2.jpg" width="130" height="130" alt="Logo"><span>100$</span></div>
-            <div class="col-sm-3 item" ><img src="~/Images1/Maso3.jpg" width="130" height="130" alt="Logo"><span>10000$</span></div>
+<div style="height:auto">
+    <div class="caw-side">
+        @Html.Partial("../Offer/_SVGCaw")
+    </div>
+    <div class="meal-table">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-4 item"><a href="../Offer/_OfferTypeFocus"><img src="~/Images1/Maso1.jpg" width="200" height="200" alt="Logo"></a><span>Balíček xyz - 1000$</span></div>
+                <div class="col-sm-4 item"><img src="~/Images1/Maso2.jpg" width="200" height="200" alt="Logo"><span>Balíček xyz - 100$</span></div>
+                <div class="col-sm-4 item"><img src="~/Images1/Maso3.jpg" width="200" height="200" alt="Logo"><span>Balíček xyz - 10000$</span></div>
+                <div class="col-sm-4 item"><img src="~/Images1/Maso3.jpg" width="200" height="200" alt="Logo"><span>Balíček xyz - 10000$</span></div>
+            </div>
         </div>
     </div>
 </div>

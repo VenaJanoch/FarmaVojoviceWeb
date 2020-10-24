@@ -41,6 +41,13 @@ namespace FarmaVojovice.Controllers
             return View();
         }
 
+        public ActionResult _OfferTýpeFocus()
+        {
+            ViewBag.Message = "Naleznete u nás";
+
+            return View();
+        }
+
 
     }
 }

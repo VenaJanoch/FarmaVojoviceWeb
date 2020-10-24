@@ -17,25 +17,24 @@
 <body>
 
     <div class="bg-img"></div>
-
-
-
-    <div class="vertical-center container body-content">
         <div id="myNavbar" class="topnav justify-content-center ">
-            @Html.ActionLink("Farma", "Index", "Home", new { area = "" }, new { @class = "activeLink" })
-            @Html.ActionLink("Zrání", "Zrani", "Home", new { area = "" }, null)
-            <a id="logo" href="#">
-                <img src="~/Bull.ico" width="30" height="30" alt="Logo">
-            </a>
-            @Html.ActionLink("Naše nabídka", "Offer", "Home", new { area = "" }, null)
-            @Html.ActionLink("Kontakt", "Contact", "Home", new { area = "" }, null)
-            @Html.ActionLink("Galerie", "Gallery", "Home", new { area = "" }, null)
-            <h1 class="nav-name">Farma Vojovice</h1>
-            <a href="javascript:void(0);" class="icon" onclick="showSmallMenu()">
-                <i class="fa fa-bars"></i>
-            </a>
+            <div class="container">
+                @Html.ActionLink("Farma", "Index", "Home", new { area = "" }, null)
+                @Html.ActionLink("Zrání", "Zrani", "Home", new { area = "" }, null)
+                <a id="logo" href="#">
+                    <img src="~/Bull.ico" width="30" height="30" alt="Logo">
+                </a>
+                @Html.ActionLink("Naše nabídka", "Offer", "Home", new { area = "" }, null)
+                @Html.ActionLink("Kontakt", "Contact", "Home", new { area = "" }, null)
+                @Html.ActionLink("Galerie", "Gallery", "Home", new { area = "" }, null)
+                <h1 class="nav-name">Farma Vojovice</h1>
+                <a href="javascript:void(0);" class="icon" onclick="showSmallMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
         </div>
-
+    <div class="vertical-center container body-content">
+        <hr class="top-hr"/>
         @RenderBody()
         @RenderSection("SPAViews", required: false)
         <hr />
