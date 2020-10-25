@@ -9,6 +9,15 @@ a::after{
     text-decoration:none;
 }
 
+a{
+    color:white;
+    font-size:medium;
+}
+
+a:hover{
+    text-decoration:none;
+}
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;

@@ -11,7 +11,6 @@
 }
 
 .item{
-    position:static;
     padding-bottom:20px;
 }
 
@@ -20,4 +19,25 @@
     width: 35%;
     overflow: hidden;
     height:auto;
+}
+
+.offer {
+    width: 30%;
+    height: inherit;
+    margin: 0 auto;
+}
+
+.table-package{
+    width: 100%;
+    text-align:center;
+    color:white;
+}
+
+.table-package th {
+    text-align: center;
+}
+
+.table-package tr {
+    border-bottom: 2px solid rgb(19, 46, 69);
+
 }
