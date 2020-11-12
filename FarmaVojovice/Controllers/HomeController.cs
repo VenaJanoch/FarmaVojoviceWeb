@@ -10,13 +10,14 @@ namespace FarmaVojovice.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Naše farma je lepší než všechny farmy na světě. Máme největšího bejka v republice a ten vám natrhne prdel raz dva";
+            ViewBag.Message = "Naše farma chová kravy na volných pastvinách a tím je zaručena nejvyšší kvalita jijich masa.";
             return View();
         }
 
         public ActionResult Zrani()
         {
-            ViewBag.Message = "U nás zraje nejlíp.";
+            ViewBag.Message = "Maso by mělo zrát v chladném prostředí minimálně 14 dní. Takto vystařené maso má mnohem lepší vlastnosti a chuť " +
+                "při následném zpracování, než maso zpracovávané hned pro zabití.";
 
             return View();
         }
