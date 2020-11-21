@@ -4,6 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <title>@ViewBag.Title - Farma Vojovice </title>
+    <meta name="description"
+          content="@ViewBag.Description" />
     <link href="~/Bull.ico" rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" href="~/Content/NavBarStyle.css">
     <link rel="stylesheet" href="~/Content/BodyStyle.css">
@@ -13,17 +15,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8OXPZAyk1PXY_q7W2CrXz3_67MAiQDqQ&callback=initMap&libraries=&v=weekly"
-            defer></script>
+    <script src="https://api.mapy.cz/loader.js"></script>
+    <script>Loader.load()</script>
 </head>
 <body>
 
     <div class="bg-img"></div>
-        <div id="myNavbar" class="topnav justify-content-center ">
+        <div id="myNavbar" class="topnav">
             <div class="container">
                 @Html.ActionLink("Farma", "Index", "Home", new { area = "" }, null)
                 @Html.ActionLink("Zrání", "Zrani", "Home", new { area = "" }, null)
-                <a id="logo" href="#">
+                <a id="logo" href='@Url.Action("Index", "Home")' >
                     <img src="~/Bull.ico" width="30" height="30" alt="Logo">
                 </a>
                 @Html.ActionLink("Naše nabídka", "Offer", "Home", new { area = "" }, null)

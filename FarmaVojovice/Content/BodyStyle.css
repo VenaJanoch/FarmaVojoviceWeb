@@ -26,7 +26,6 @@ footer{
 .addres {
     color: white;
     margin: 20px 0 20px 0;
-    
 }
 
 
@@ -34,27 +33,40 @@ address {
     color: rgb(19, 46, 69);
     font-size: xx-large;
     text-decoration: none;
-    width: 30%;
+    width: 50%;
     height: inherit;
     margin: 0 auto;
     text-align: center;
 }
 
-#map {
-    height: 400px;
+#mapa {
+    height: 300px;
     /* The height is 400 pixels */
-    width: 100%;
+    width: 40%;
     /* The width is the width of the web page */
+    margin-left:50px;
+    margin-top: 70px;
 }
 
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 900px) {
     .vertical-center{
         width: 100%;
         margin:0;
     }
 
-    address{
-        padding-left:0;
+    address {
+        padding-left: 0;
+        margin: 0;
+        width: 100%;
+        font-size: x-large;
+    }
+
+    #mapa {
+        height: 300px;
+        /* The height is 400 pixels */
+        width: 70%;
+        /* The width is the width of the web page */
     }
 }

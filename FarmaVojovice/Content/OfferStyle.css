@@ -41,3 +41,35 @@
     border-bottom: 2px solid rgb(19, 46, 69);
 
 }
+
+span {
+    font-size: large;
+}
+
+@media screen and (max-width: 800px) {
+    .offer {
+        width: 100%;
+        height: inherit;
+        text-align:center;
+    }
+
+    .table-package {
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+
+    .meal-table {
+        width: 100%;
+        height: auto;
+    }
+
+    .caw-side {
+        float: none ;
+        width: 100%;
+    }
+
+    .item {
+        text-align: center;
+    }
+}

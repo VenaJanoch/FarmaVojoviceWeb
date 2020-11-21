@@ -2,19 +2,41 @@
     ViewBag.Title = "Naše nabídka";
 }
 <h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<div style="height:auto">
-    <div class="caw-side">
-        @Html.Partial("../Offer/_SVGCaw")
-    </div>
-    <div class="meal-table">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="col-sm-4 item"><img src="~/Images1/Maso1.jpg" width="200" height="200" alt="Logo"><span>@Html.ActionLink("Balíček xyz - 1000$", "_OfferTypeFocus", "Offer", new { area = "" }, null)</span></div>
-                <div class="col-sm-4 item"><img src="~/Images1/Maso2.jpg" width="200" height="200" alt="Logo"><span>Balíček xyz - 100$</span></div>
-                <div class="col-sm-4 item"><img src="~/Images1/Maso3.jpg" width="200" height="200" alt="Logo"><span>Balíček xyz - 10000$</span></div>
-                <div class="col-sm-4 item"><img src="~/Images1/Maso3.jpg" width="200" height="200" alt="Logo"><span>Balíček xyz - 10000$</span></div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-5" style="position:static">
+            <h3>@ViewBag.Message</h3>
+        </div>
+        <div class="meal-table col-lg-7" style="position:static">
+            <div class="row">
+                <h3>Naleznete u nás</h3>
+                <div>
+                    <div class="col-sm-4" style="position:static">
+                        <a href='@Url.Action("_OfferTypeFocus", "Offer")'>
+                            <img src="~/Images1/Maso1.jpg" width="200" height="200" alt="Logo">
+                            <span>Balíček xyz - 1000$</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-4" style="position:static">
+                        <a href='@Url.Action("_OfferTypeFocus", "Offer")'>
+                            <img src="~/Images1/Maso2.jpg" width="200" height="200" alt="Logo">
+                            <span>Balíček xyz - 100$</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-4" style="position:static">
+                        <a href='@Url.Action("_OfferTypeFocus", "Offer")'>
+                            <img src="~/Images1/Maso3.jpg" width="200" height="200" alt="Logo">
+                            <span>Balíček xyz - 10000$</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-4" style="position:static">
+                        <a href='@Url.Action("_OfferTypeFocus", "Offer")'>
+                            <img src="~/Images1/Maso3.jpg" width="200" height="200" alt="Logo">
+                            <span>Balíček xyz - 10000$</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
