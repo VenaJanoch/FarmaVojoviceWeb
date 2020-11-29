@@ -6,7 +6,6 @@
     <title>@ViewBag.Title - Farma Vojovice </title>
     <meta name="description"
           content="@ViewBag.Description" />
-    <link href="~/Bull.ico" rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" href="~/Content/NavBarStyle.css">
     <link rel="stylesheet" href="~/Content/BodyStyle.css">
     <link rel="stylesheet" href="~/Content/GalleryStyle.css">
@@ -24,13 +23,7 @@
         <div id="myNavbar" class="topnav">
             <div class="container">
                 @Html.ActionLink("Farma", "Index", "Home", new { area = "" }, null)
-                @Html.ActionLink("Zrání", "Zrani", "Home", new { area = "" }, null)
-                <a id="logo" href='@Url.Action("Index", "Home")' >
-                    <img src="~/Bull.ico" width="30" height="30" alt="Logo">
-                </a>
-                @Html.ActionLink("Naše nabídka", "Offer", "Home", new { area = "" }, null)
                 @Html.ActionLink("Kontakt", "Contact", "Home", new { area = "" }, null)
-                @Html.ActionLink("Galerie", "Gallery", "Home", new { area = "" }, null)
                 <h1 class="nav-name">Farma Vojovice</h1>
                 <a href="javascript:void(0);" class="icon" onclick="showSmallMenu()">
                     <i class="fa fa-bars"></i>
@@ -41,8 +34,6 @@
         <hr class="top-hr"/>
         @RenderBody()
         @RenderSection("SPAViews", required: false)
-        <hr />
-        @Html.Partial("../Home/_Footer")
     </div>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

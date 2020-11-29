@@ -154,7 +154,7 @@
     <Content Include="Images1\Maso3.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FarmaVojovice.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\gallery-script.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
