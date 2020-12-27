@@ -10,8 +10,30 @@
     color:white;
 }
 
-.item{
-    padding-bottom:20px;
+.meal-offer{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    border: 2px solid;
+}
+
+.offer-info{
+    padding-top: 18px;
+    
+}
+.offer-info div {
+   text-align:center;
+}
+.offer-info a {
+    color: white;
+}
+
+.offer-info a:hover{
+   text-decoration:none;
+}
+
+.item {
+    padding-bottom: 20px;
 }
 
 .caw-side {

@@ -147,6 +147,8 @@
     <Content Include="Images1\Galerie\Krava3.jpg" />
     <Content Include="Images1\Galerie\Krava4.jpg" />
     <Content Include="Images1\Logo.png" />
+    <Content Include="Images1\meat-4-256%281%29.png" />
+    <Content Include="Images1\meat-4.svg" />
     <Content Include="Images1\UvodniFotka.png" />
     <Content Include="Images1\Kravy.jpg" />
     <Content Include="Images1\Maso1.jpg" />
@@ -168,6 +170,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\StickyScript.js" />
+    <Content Include="Views\DateConfig.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

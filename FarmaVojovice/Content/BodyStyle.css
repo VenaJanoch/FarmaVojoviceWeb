@@ -5,6 +5,13 @@
     margin: 0 auto;
 }
 
+.meal-date {
+    color:white;
+    font-size:18px;
+    width:100%;
+    text-align:right;
+}
+
 footer{
     text-align:center;
 }
