@@ -1,6 +1,9 @@
 ﻿@{
     ViewBag.Title = "Naše nabídka";
 }
+@using FarmaVojovice.Models
+@model IEnumerable<OfferModel>
+
 <h2>@ViewBag.Title.</h2>
 
 <div class="container">
@@ -18,38 +21,36 @@
                     </a>
                     <a class="btn btn-link btn-lg"><span class="fa fa-facebook-official" style="font-size:20px"></span></a>
                 </div>
-            </div>            
+            </div>
         </div>
         <div class="meal-table col-lg-7" style="position:static">
-            <div class="row">
-                <h3>Naleznete u nás</h3>
-                <div>
-                    <div class="col-sm-4" style="position:static">
-                        <a href='@Url.Action("_OfferTypeFocus", "Offer")'>
-                            <img src="~/Images1/Maso1.jpg" width="200" height="200" alt="Logo">
-                            <span>Balíček xyz - 1000$</span>
-                        </a>
-                    </div>
-                    <div class="col-sm-4" style="position:static">
-                        <a href='@Url.Action("_OfferTypeFocus", "Offer")'>
-                            <img src="~/Images1/Maso2.jpg" width="200" height="200" alt="Logo">
-                            <span>Balíček xyz - 100$</span>
-                        </a>
-                    </div>
-                    <div class="col-sm-4" style="position:static">
-                        <a href='@Url.Action("_OfferTypeFocus", "Offer")'>
-                            <img src="~/Images1/Maso3.jpg" width="200" height="200" alt="Logo">
-                            <span>Balíček xyz - 10000$</span>
-                        </a>
-                    </div>
-                    <div class="col-sm-4" style="position:static">
-                        <a href='@Url.Action("_OfferTypeFocus", "Offer")'>
-                            <img src="~/Images1/Maso3.jpg" width="200" height="200" alt="Logo">
-                            <span>Balíček xyz - 10000$</span>
-                        </a>
-                    </div>
-                </div>
+            <!--   <div class="row"> Vratit az budou obrazky -->
+            <h3>Naleznete u nás</h3>
+            <div>
+
+                @if (Model.Count() > 0)
+                {
+                    <hr />
+                    <table class="table-offer" cellpadding="0" cellspacing="0" border="1">
+                        <tr>
+                            <th>Druh</th>
+                            <th>Cena</th>
+                            <th>Datum zabití</th>
+                            <th>Popis</th>
+                        </tr>
+                        @foreach (OfferModel offer in Model)
+                        {
+                            <tr>
+                                <td>@offer.Name</td>
+                                <td>@offer.Cost</td>
+                                <td>@offer.DeadDate</td>
+                                <td>@offer.Description</td>
+                            </tr>
+                        }
+                    </table>
+                }
             </div>
+            <!--   </div> Vratit az budou obrazky -->
         </div>
     </div>
 </div>
