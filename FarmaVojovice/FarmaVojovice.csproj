@@ -158,6 +158,8 @@
     <Content Include="Images1\Galerie\Krava3.jpg" />
     <Content Include="Images1\Galerie\Krava4.jpg" />
     <Content Include="Images1\Logo.png" />
+    <Content Include="Images1\logo_bez_pozadí.png" />
+    <Content Include="Images1\logo_prim.png" />
     <Content Include="Images1\meat-4-256%281%29.png" />
     <Content Include="Images1\meat-4.svg" />
     <Content Include="Images1\UvodniFotka.png" />

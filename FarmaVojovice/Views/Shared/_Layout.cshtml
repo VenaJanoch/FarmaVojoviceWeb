@@ -1,8 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
     <title>@ViewBag.Title - Farma Vojovice </title>
     <meta name="description"
           content="@ViewBag.Description" />
@@ -20,31 +19,41 @@
 </head>
 <body>
 
-    <div class="bg-img"></div>
-        <div id="myNavbar" class="topnav">
-            <div class="container">
-                @Html.ActionLink("Farma", "Index", "Home", new { area = "" }, null)
-                @Html.ActionLink("Zrání", "Zrani", "Home", new { area = "" }, null)
-                <a id="logo" href='@Url.Action("Index", "Home")' >
-                    <img src="~/Bull.ico" width="30" height="30" alt="Logo">
-                </a>
-                @Html.ActionLink("Naše nabídka", "Offer", "Home", new { area = "" }, null)
-                @Html.ActionLink("Kontakt", "Contact", "Home", new { area = "" }, null)
-                @Html.ActionLink("Galerie", "Gallery", "Home", new { area = "" }, null)
-                <h1 class="nav-name">Farma Vojovice</h1>
-                <a href="javascript:void(0);" class="icon" onclick="showSmallMenu()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </div>
-    <div class="vertical-center container body-content">
-        <div class="meal-date">Odběr masa možný od @ViewBag.Date</div>
-        <hr class="top-hr"/>
-        @RenderBody()
-        @RenderSection("SPAViews", required: false)
-        <hr />
-        @Html.Partial("../Home/_Footer")
+    <div class="bg-img">
+        <img class="nav-logo" src="~/Images1/logo_bez_pozadí.png" width="180" height="60" alt="Farma Vojovice">
     </div>
+    <div id="myNavbar" class="topnav">
+        <div class="container">
+            @Html.ActionLink("Farma", "Index", "Home", new { area = "" }, null)
+            @Html.ActionLink("Zrání", "Zrani", "Home", new { area = "" }, null)
+            <a id="logo" href='@Url.Action("Offer", "Home")'>
+                <img src="~/Bull.ico" width="30" height="30" alt="Logo">
+            </a>
+            @Html.ActionLink("Naše nabídka", "Offer", "Home", new { area = "" }, null)
+            @Html.ActionLink("Kontakt", "Contact", "Home", new { area = "" }, null)
+            @Html.ActionLink("Galerie", "Gallery", "Home", new { area = "" }, null)
+
+            <h3 class="nav-name">Farma Vojovice</h3>
+            
+            <a href="javascript:void(0);" class="icon" onclick="showSmallMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div> 
+    </div>
+        <div class="vertical-center container body-content">
+            <div class="row">
+                <div class="col-lg-6" style="position:static">
+                    <a href="https://www.facebook.com/mil.skala"><span class="fa fa-facebook-square" style="font-size:20px"></span></a>
+                    <a href="https://www.instagram.com/mil.skala/?hl=cs"><span class="fa fa-instagram" style="font-size:20px"></span></a>
+                </div>
+                <div class="meal-date col-lg-6" style="position:static">@ViewBag.Date</div>
+            </div>
+                <hr class="top-hr" />
+            @RenderBody()
+            @RenderSection("SPAViews", required: false)
+            <hr />
+            @Html.Partial("../Home/_Footer")
+        </div>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/Scripts/StickyScript.js")

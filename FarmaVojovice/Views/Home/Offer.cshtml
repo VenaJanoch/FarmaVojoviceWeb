@@ -11,13 +11,13 @@
         <div class="col-lg-5" style="position:static">
             <div class="meal-offer">
                 <img src="~/Images1/meat-4-256(1).png" width="200" height="200" alt="Meat">
-                <p>Odběr masa možný od @ViewBag.Date</p>
+                <p>@ViewBag.Date</p>
             </div>
             <div class="offer-info">
                 <h3>@ViewBag.Message</h3>
                 <div>
                     <a href='@Url.Action("Contact", "Home")' class="btn btn-link btn-lg">
-                        <span class="glyphicon glyphicon-phone"></span> Kontakt
+                        <span class="glyphicon glyphicon-phone" style="position:static"></span> Kontakt
                     </a>
                     <a class="btn btn-link btn-lg"><span class="fa fa-facebook-official" style="font-size:20px"></span></a>
                 </div>

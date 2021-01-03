@@ -13,18 +13,19 @@ namespace FarmaVojovice.Controllers
         public ActionResult Index()
         {
             ViewBag.Message = "Naše farma chová krávy na volných pastvinách a tím je zaručena nejvyšší kvalita jejich masa.";
-            ViewBag.Description = "Farma Vojovice je rodinná farma nacházející se na Jižním Plzeňsku. Zabývá se převážně chovem skotu a jeho prodeje." +
-                "Skot je chovaný ne velkých pastvinách, které přispívají k jeho vysoké kvalitě";
+            ViewBag.Description = "Farma Vojovice je rodinná farma nacházející se na Jižním Plzeňsku nedaleko města Nepomuku." +
+                " Zabývá se převážně chovem skotu a jeho prodeje." +
+                " Skot je chovaný ne velkých pastvinách, které přispívají k jeho vysoké kvalitě. Prodáváme vyzrále hovězí maso";
             ViewBag.Date = GetMeatDate();
             return View();
         }
 
         public ActionResult Zrani()
         {
-            ViewBag.Message = "Maso by mělo zrát v chladném prostředí minimálně 14 dní. Takto vystařené maso má mnohem lepší vlastnosti a chuť " +
+            ViewBag.Message = "Na naší farmě ve Vojovicích maso zraje v chladném prostředí minimálně 14 dní. Takto vystařené maso má mnohem lepší vlastnosti a chuť " +
                 "při následném zpracování, než maso zpracovávané hned pro zabití.";
-            ViewBag.Description = "Farma Vojovice je rodinná farma nacházející se na Jižním Plzeňsku. Zabývá se převážně chovem skotu a jeho prodeje." +
-                "V nově zařízené bourárně je naše maso stařeno a tím získává na kvalitě";
+            ViewBag.Description = "Farma Vojovice je rodinná farma nacházející se na Jižním Plzeňsku. Na naší farmě ve Vojovicích maso zraje v chladném prostředí minimálně 14 dní. Takto vystařené maso má mnohem lepší vlastnosti a chuť " +
+                "při následném zpracování, než maso zpracovávané hned pro zabití.";
             ViewBag.Date = GetMeatDate();
             return View();
         }

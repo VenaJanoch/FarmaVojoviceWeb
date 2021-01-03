@@ -66,69 +66,84 @@
     display: none;
 }
 
-@media screen and (max-width: 1000px) {
+.nav-logo {
+    width: 40%;
+    height: 40%;
+    margin-left: 30%;
+    margin-top:60px;
+}
+
+.nav-name {
+    float: right;
+    color: white;
+    margin-top: 36px;
+}
+
+@media screen and (max-width: 1200px) {
     .topnav a {
-        padding: 15px 10px;
+        padding: 15px 15px;
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .topnav a {
+        padding: 15px 5px;
+    }
+}
 
     /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-    @media screen and (max-width: 900px) {
-        .topnav {
-            padding-left: 0;
-            height: auto;
-        }
-
-        #logo {
-            display: none;
-        }
-
-        .nav-name {
-            display: none;
-        }
-
-        .topnav a:not(:first-child) {
-            display: none;
-        }
-
-        .topnav a.icon {
-            float: right;
-            display: block;
-        }
+@media screen and (max-width: 900px) {
+    .topnav {
+        padding-left: 0;
+        height: auto;
     }
 
+    .nav-name{
+        display:none;
+    }
 
-    .nav-name {
+    #logo {
+        display: none;
+    }
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
         float: right;
-        color: white;
+        display: block;
     }
-
+}
     /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-    @media screen and (max-width: 800px) {
-        .topnav.responsive {
-            background-color: rgb(19, 46, 69);
-            position: relative;
-        }
-
-            .topnav.responsive a.icon {
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-
-            .topnav.responsive a {
-                float: none;
-                display: block;
-                text-align: left;
-            }
-
-        .topnav a:hover {
-            background-color: rgb(162, 126, 14);
-            color: white;
-            text-decoration: none;
-        }
+@media screen and (max-width: 800px) {
+    .topnav.responsive {
+        background-color: rgb(19, 46, 69);
+        position: relative;
     }
 
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 
-    /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav a:hover {
+        background-color: rgb(162, 126, 14);
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav-logo {
+    width: 60%;
+    height: 45%;
+    margin-left: 20%;
+    margin-top: 50px;
+    }
+}
