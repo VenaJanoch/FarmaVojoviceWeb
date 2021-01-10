@@ -1,34 +1,40 @@
-﻿@{
-    ViewBag.Title = "Galerie";
-}
+﻿
 <h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
-
 
 <div id="myBtnContainer">
     <button class="btn active" onclick="filterSelection('all')"> Všechny fotografie</button>
-    <button class="btn" onclick="filterSelection('house')"> Statek </button>
-    <button class="btn" onclick="filterSelection('bulding')"> Bourárna</button>
-    <button class="btn" onclick="filterSelection('people')"> Lidé</button>
 </div>
 
 <!-- Images used to open the lightbox -->
 <div class="container">
     <div class="row">
         <div class="column house">
-            <img src="~/Images1/Galerie/Krava1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" height="300" width="300">
+            <img src="~/Images1/Info/kravy_par1_u.png" onclick="openModal();currentSlide(1)" class="hover-shadow" height="250" width="350" alt="Foto1">
         </div>
         <div class="column house">
-            <img src="~/Images1/Galerie/Krava2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" height="300" width="300">
+            <img src="~/Images1/Info/krava_par3_2_u.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" height="300" width="250" alt="Foto2">
         </div>
         <div class="column bulding">
-            <img src="~/Images1/Galerie/Krava3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" height="300" width="300">
+            <img src="~/Images1/Info/krava_par3_1.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" height="250" width="350" alt="Foto3">
         </div>
     </div>
-
     <div class="row">
-        <div class="column people">
-            <img src="~/Images1/Galerie/Krava4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" height="300" width="300">
+        <div class="column house">
+            <img src="~/Images1/Info/krava_par2_3.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow" height="250" width="350" alt="Foto4">
+        </div>
+        <div class="column house">
+            <img src="~/Images1/Info/krava_par2_2_u.png" onclick="openModal();currentSlide(2)" class="hover-shadow" height="250" width="350" alt="Foto5">
+        </div>
+        <div class="column bulding">
+            <img src="~/Images1/Info/krava_par2_1_1_u.png" onclick="openModal();currentSlide(3)" class="hover-shadow" height="250" width="350" alt="Foto6">
+        </div>
+    </div>
+    <div class="row">
+        <div class="column house">
+            <img src="~/Images1/Info/Bourarna.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" height="300" width="350" alt="Foto7">
+        </div>
+        <div class="column house">
+            <img src="~/Images1/Info/balicek.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" height="300" width="350" alt="Foto8">
         </div>
     </div>
 </div>
@@ -41,23 +47,41 @@
     <div class="modal-content">
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <div class="mySlides">
-            <div class="numbertext">1 / 4</div>
-            <img src="~/Images1/Galerie/Krava1.jpg" style="width:100%">
+            <div class="numbertext">1 / 8</div>
+            <img src="~/Images1/Info/kravy_par1_u.png" style="width:100%" alt="Foto1">
         </div>
 
         <div class="mySlides">
-            <div class="numbertext">2 / 4</div>
-            <img src="~/Images1/Galerie/Krava2.jpg" style="width:100%">
+            <div class="numbertext">2 / 8</div>
+            <img src="~/Images1/Info/krava_par3_2_u.jpg" style="width:100%" alt="Foto2">
         </div>
 
         <div class="mySlides">
-            <div class="numbertext">3 / 4</div>
-            <img src="~/Images1/Galerie/Krava3.jpg" style="width:100%">
+            <div class="numbertext">3 / 8</div>
+            <img src="~/Images1/Info/krava_par3_1.jpg" style="width:100%" alt="Foto3">
         </div>
 
         <div class="mySlides">
-            <div class="numbertext">4 / 4</div>
-            <img src="~/Images1/Galerie/Krava4.jpg" style="width:100%">
+            <div class="numbertext">4 / 8</div>
+            <img src="~/Images1/Info/krava_par2_3.jpeg" style="width:100%" alt="Foto4">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 8</div>
+            <img src="~/Images1/Info/krava_par2_2_u.png" style="width:100%" alt="Foto5">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 8</div>
+            <img src="~/Images1/Info/krava_par2_1_1_u.png" style="width:100%" alt="Foto6">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">7 / 8</div>
+            <img src="~/Images1/Info/Bourarna.jpg" style="width:100%" alt="Foto7">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">8 / 8</div>
+            <img src="~/Images1/Info/balicek.jpg" style="width:100%" alt="Foto8">
         </div>
 
         <!-- Next/previous controls -->

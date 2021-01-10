@@ -4,7 +4,7 @@
 
 .meal-table {
     text-align: center;
-    width: 55%;
+    width: 100% ;
     overflow: hidden;
     height:auto;
     color:white;
@@ -14,7 +14,6 @@
     color: white;
     font-size: 24px;
     text-align: center;
-    border: 2px solid;
 }
 
 .offer-info{
@@ -49,28 +48,34 @@
     margin: 0 auto;
 }
 
-.table-package{
+.table-package {
     width: 100%;
-    text-align:center;
-    color:white;
+    text-align: center;
+    color: white;
 }
 
 .table-offer {
-    width: 100%;
+    width: 60%;
     text-align: center;
     color: white;
     font-size: 24px;
     border-color: rgb(19, 46, 69);
-    border:2px;
+    border: 1px solid;
+    border-collapse: collapse;
+    margin-left: 20%;
 }
-.table-offer th {
-    text-align: center;
-    color: rgb(19, 46, 69);
-}
+    .table-offer th {
+        border: 1px solid;
+        text-align: center;
+        color: rgb(19, 46, 69);
+        border-collapse: collapse;
+    }
 
-.table-offer td {
-     border-color: rgb(19, 46, 69);
-}
+    .table-offer td {
+        border: 1px solid;
+        border-color: rgb(19, 46, 69);
+        border-collapse: collapse;
+    }
 
 .table-package th {
     text-align: center;
@@ -102,10 +107,13 @@ span {
         width: 100%;
         height: auto;
     }
-
-    .caw-side {
-        float: none ;
+    .table-offer {
         width: 100%;
+        margin-left: 0;
+    }
+    .caw-side {
+    float: none ;
+    width: 100%;
     }
 
     .item {

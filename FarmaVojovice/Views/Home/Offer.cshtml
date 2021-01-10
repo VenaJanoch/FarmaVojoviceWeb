@@ -1,6 +1,4 @@
-﻿@{
-    ViewBag.Title = "Naše nabídka";
-}
+﻿
 @using FarmaVojovice.Models
 @model IEnumerable<OfferModel>
 
@@ -8,47 +6,40 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-5" style="position:static">
-            <div class="meal-offer">
-                <img src="~/Images1/meat-4-256(1).png" width="200" height="200" alt="Meat">
-                <p>@ViewBag.Date</p>
-            </div>
-            <div class="offer-info">
-                <h3>@ViewBag.Message</h3>
-                <div>
-                    <a href='@Url.Action("Contact", "Home")' class="btn btn-link btn-lg">
-                        <span class="glyphicon glyphicon-phone" style="position:static"></span> Kontakt
-                    </a>
-                    <a class="btn btn-link btn-lg"><span class="fa fa-facebook-official" style="font-size:20px"></span></a>
-                </div>
-            </div>
+
+        <div class="offer-info col-md-7" style="position:static">
+            <p style="font-size:30px;color:white;position:static">@ViewBag.FirstPar</p>
+            <p style="font-size:30px;color:white;position:static">@ViewBag.SecondPar</p>
         </div>
-        <div class="meal-table col-lg-7" style="position:static">
+        <div class="meal-offer col-md-5" style="position:static">
+            <img src="~/Images1/Info/balicek.jpg" width="400" height="300" alt="Meat">
+            <p>@ViewBag.Date</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="meal-table col-lg-12" style="position:static">
             <!--   <div class="row"> Vratit az budou obrazky -->
-            <h3>Naleznete u nás</h3>
+            <h3>Ceník hovězího masa</h3>
             <div>
 
                 @if (Model.Count() > 0)
                 {
                     <hr />
-                    <table class="table-offer" cellpadding="0" cellspacing="0" border="1">
+                    <table class="table-offer">
                         <tr>
-                            <th>Druh</th>
+                            <th>Druh masa</th>
                             <th>Cena</th>
-                            <th>Datum zabití</th>
-                            <th>Popis</th>
                         </tr>
                         @foreach (OfferModel offer in Model)
                         {
                             <tr>
                                 <td>@offer.Name</td>
                                 <td>@offer.Cost</td>
-                                <td>@offer.DeadDate</td>
-                                <td>@offer.Description</td>
                             </tr>
                         }
                     </table>
                 }
+                <p>Ceny uvedené v ceníku jsou za 1 kg a včetně DPH 15%.</p>
             </div>
             <!--   </div> Vratit az budou obrazky -->
         </div>

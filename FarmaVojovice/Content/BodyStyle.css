@@ -5,11 +5,17 @@
     margin: 0 auto;
 }
 
+farm-content {
+    font-size: 42px;
+    color: white;
+}
+
 .meal-date {
-    color:white;
-    font-size:18px;
-    width:100%;
-    text-align:right;
+    color: white;
+    font-size: 24px;
+    font-family:'Times New Roman', Times, serif;
+    width: 100%;
+    text-align: right;
 }
 
 footer{
@@ -75,5 +81,8 @@ address {
         /* The height is 400 pixels */
         width: 70%;
         /* The width is the width of the web page */
+    }
+    .meal-date {
+        font-size: 18px;
     }
 }

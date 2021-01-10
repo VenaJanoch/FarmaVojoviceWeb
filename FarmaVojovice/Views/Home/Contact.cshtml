@@ -1,6 +1,4 @@
-﻿@{
-    ViewBag.Title = "Kontakt";
-}
+﻿
 <h2>@ViewBag.Title.</h2>
 <div class="container">
     <div class="row">
@@ -15,15 +13,13 @@
                 <p class="addres"> +420 608 254 804 </p>
                 <abbr title="E-mail">E-mail:</abbr>
                 <p class="addres">
-                    milan.skala@farmavojovice.cz<br />
                     prodej@farmavojovice.cz<br />
                 </p>
             </address>
             <address>
                 <abbr>Najdete nás:</abbr>
                 <p class="addres">
-                    <a class="btn btn-info btn-lg" href="https://www.facebook.com/mil.skala"><span class="fa fa-facebook-official" style="font-size:30px"></span></a>
-                    <a class="btn btn-info btn-lg" href="https://www.facebook.com/mil.skala"><span class="fa fa-instagram" style="font-size:30px"></span></a>
+                    <a class="btn btn-info btn-lg" href="https://www.facebook.com/Farma-Vojovice-101344071927510"><span class="fa fa-facebook-official" style="font-size:30px"></span></a>
                 </p>
             </address>
         </div>
@@ -32,3 +28,6 @@
     </div>
 </div>
 
+<script src="https://api.mapy.cz/loader.js"></script>
+<script>Loader.load()</script>
+@Scripts.Render("~/Scripts/MapsScript.js")

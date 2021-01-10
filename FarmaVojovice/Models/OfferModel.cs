@@ -10,7 +10,6 @@ namespace FarmaVojovice.Models
     {
         public string Name { get; set; }
         public string Cost { get; set; }
-        public string DeadDate { get; set; }
         public string Description { get; set; }
     }
 }
