@@ -2,17 +2,17 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8" />
-    <title>@ViewBag.Title - Farma Vojovice </title>
     <meta name="google-site-verification" content="K2uCSLLpOAEhJKVTm19KURxaET3fKku8SHs_LnPMzYc" />
     <meta name="description"
           content="@ViewBag.Description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Farma Vojovice </title>
     <link href="~/Bull.ico" rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" href="~/Content/NavBarStyle.css">
     <link rel="stylesheet" href="~/Content/BodyStyle.css">
     <link rel="stylesheet" href="~/Content/GalleryStyle.css">
     <link rel="stylesheet" href="~/Content/OfferStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -37,19 +37,19 @@
             </a>
         </div> 
     </div>
-        <div class="vertical-center container body-content">
-            <div class="row">
-                <div class="col-lg-6" style="position:static">
-                    <a href="https://www.facebook.com/Farma-Vojovice-101344071927510"><span class="fa fa-facebook-square" style="font-size:20px"></span></a>
-                </div>
-                <div class="meal-date col-lg-6" style="position:static">@ViewBag.Date</div>
+    <div class="vertical-center container body-content">
+        <div class="row">
+            <div class="col-lg-6" style="position:static">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Farma-Vojovice-101344071927510"><span class="fa fa-facebook-square" style="font-size:20px"></span></a>
             </div>
-                <hr class="top-hr" />
-            @RenderBody()
-            @RenderSection("SPAViews", required: false)
-            <hr />
-            @Html.Partial("../Home/_Footer")
+            <div class="meal-date col-lg-6" style="position:static">@ViewBag.Date</div>
         </div>
+        <hr class="top-hr"/>
+        @RenderBody()
+        @RenderSection("SPAViews", required: false)
+        <hr />
+        @Html.Partial("../Home/_Footer")
+    </div>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/Scripts/StickyScript.js")
