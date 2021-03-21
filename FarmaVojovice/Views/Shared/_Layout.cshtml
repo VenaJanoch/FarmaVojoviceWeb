@@ -25,7 +25,7 @@
         <div class="container">
             @Html.ActionLink("Farma", "Index", "Home", new { area = "" }, null)
             @Html.ActionLink("Zrání", "Maturation", "Home", new { area = "" }, null)
-           <a id="logo" class="caw-logo" href=#>
+           <a id="logo" class="caw-logo" href='@Url.Action("Index", "Home")'>
                 <img src="~/Bull.ico" width="30" height="30" alt="Logo">
            </a>
             @Html.ActionLink("Naše nabídka", "Offer", "Home", new { area = "" }, null)

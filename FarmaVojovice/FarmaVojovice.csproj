@@ -153,6 +153,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images1\Biolist.jpg" />
     <Content Include="Images1\Biozebra-1.jpg" />
+    <Content Include="Images1\Galerie\Bourarna_mrazaky_1.jpg" />
+    <Content Include="Images1\Galerie\Bourarna_stoly_1.jpg" />
+    <Content Include="Images1\Galerie\Bourarna_stul_1.jpg" />
     <Content Include="Images1\Galerie\IMG_3691.jpg" />
     <Content Include="Images1\Galerie\IMG_3692.jpg" />
     <Content Include="Images1\Galerie\IMG_3693.jpg" />
@@ -164,6 +167,10 @@
     <Content Include="Images1\Galerie\Maso3.jpg" />
     <Content Include="Images1\Galerie\Maso4.jpg" />
     <Content Include="Images1\Galerie\Maso6.jpg" />
+    <Content Include="Images1\Info\MasoBourarna_1.jpg" />
+    <Content Include="Images1\Galerie\Rostenec_1.jpg" />
+    <Content Include="Images1\Galerie\tele_1.jpg" />
+    <Content Include="Images1\Galerie\teleta_1.jpg" />
     <Content Include="Images1\Info\balicek.jpg" />
     <Content Include="Images1\Info\Bourarna.jpg" />
     <Content Include="Images1\Info\krava_par2_1.jpg" />
@@ -206,7 +213,6 @@
     <Content Include="Scripts\MapsScript.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\StickyScript.js" />
-    <Content Include="Data\DateConfig.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -229,6 +235,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
