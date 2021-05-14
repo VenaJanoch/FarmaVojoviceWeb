@@ -66,7 +66,7 @@ namespace FarmaVojovice.Controllers
         {
             ViewBag.Title = "Naše nabídka";
             ViewBag.FirstPar = "Maso prodáváme přímo ze dvora. Můžete si jej objednat telefonicky, popř. přes email. Naše hovězí maso nabízíme jak v balíčku o hmotnosti 10kg, tak i samostatně dle ceníku. ";
-            ViewBag.SecondPar = "Složení: 2,5 kg hovězí zadní, 2,5 kg hovězí přední, 2 kg hovězí mleté, 2 kg hovězí na polévku, 1 kg kostky na guláš. " +
+            ViewBag.SecondPar = "Složení: 2,5 kg hovězí zadní, 2 kg hovězí přední, 2 kg hovězí mleté, 2,5 kg hovězí na polévku, 1 kg kostky na guláš. " +
                 "Složení balíčku není pevné a může se kombinovat. Cena přibližně 2000 Kč. ";
             ViewBag.Description = "Farma Vojovice je rodinná farma nacházející se na Jižním Plzeňsku. Zabývá se převážně chovem skotu a jeho prodeje." +
                  "V naší nabídce naleznete veké množství kvalitního vyzrálého masa. Od masa na steaky až po maso na guláš";
